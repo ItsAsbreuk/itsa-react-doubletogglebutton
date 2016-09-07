@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Component - itsa-react-doubletogglebutton</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="https://avatars0.githubusercontent.com/u/8314644?v=3&amp;s=84" title="itsa-react-doubletogglebutton"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 0.0.1</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Component.html">Component</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/component.jsx.html">component.jsx</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1>Component Class</h1>
+<div class="box meta">
+
+
+        <div class="foundat">
+            Defined in: <a href="../files/lib_component.jsx.html#l3"><code>lib&#x2F;component.jsx:3</code></a>
+        </div>
+
+            Module: <a href="../modules/component.jsx.html">component.jsx</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>Description here</p>
+<p><i>Copyright (c) 2016 ItsAsbreuk - <a href="http://itsasbreuk.nl">http://itsasbreuk.nl</a></i><br>
+New BSD License - <a href="http://choosealicense.com/licenses/bsd-3-clause/">http://choosealicense.com/licenses/bsd-3-clause/</a></p>
+
+</div>
+
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                            <li class="index-item method">
+                                <a href="#method_blur">blur</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_focus">focus</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_render">render</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="index-section properties">
+                    <h3>Properties</h3>
+
+                    <ul class="index-list properties">
+                            <li class="index-item property">
+                                <a href="#property_activatedBy">activatedBy</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_activatedBy">activatedBy</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_aria-label">aria-label</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_aria-label">aria-label</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_buttonClass">buttonClass</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_className">className</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_disabled">disabled</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_leftButtonHTML">leftButtonHTML</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_leftButtonHTMLPressed">leftButtonHTMLPressed</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_leftButtonHTMLReleased">leftButtonHTMLReleased</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_leftButtonText">leftButtonText</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_leftButtonTextPressed">leftButtonTextPressed</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_leftButtonTextReleased">leftButtonTextReleased</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_name">name</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_object">object</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_onClick">onClick</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_rightButtonHTML">rightButtonHTML</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_rightButtonHTMLPressed">rightButtonHTMLPressed</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_rightButtonHTMLReleased">rightButtonHTMLReleased</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_rightButtonText">rightButtonText</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_rightButtonTextPressed">rightButtonTextPressed</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_rightButtonTextReleased">rightButtonTextReleased</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_state">state</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_stateUndefinable">stateUndefinable</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_tabIndex">tabIndex</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+
+        </div>
+
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+<div id="method_blur" class="method item">
+    <h3 class="name"><code>blur</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+        <span class="flag chainable">chainable</span>
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l272"><code>lib&#x2F;component.jsx:272</code></a>
+        </p>
+
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>Blurs the Component.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_focus" class="method item">
+    <h3 class="name"><code>focus</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[focusChecked=false]</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[transitionTime]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+        <span class="flag chainable">chainable</span>
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l286"><code>lib&#x2F;component.jsx:286</code></a>
+        </p>
+
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>Sets the focus on the Component's unchecked button. (unless specified to set at the checked)</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name optional">[focusChecked=false]</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>to focus the checked button</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[transitionTime]</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>transition-time to focus the element into the view</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_render" class="method item">
+    <h3 class="name"><code>render</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type"></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l326"><code>lib&#x2F;component.jsx:326</code></a>
+        </p>
+
+
+
+            <p>Available since 15.0.0</p>
+    </div>
+
+    <div class="description">
+        <p>React render-method --&gt; renderes the Component.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                    <p>ReactComponent</p>
+
+            </div>
+        </div>
+
+
+</div>
+            </div>
+
+            <div id="properties" class="api-class-tabpanel">
+                <h2 class="off-left">Properties</h2>
+
+<div id="property_activatedBy" class="property item">
+    <h3 class="name"><code>activatedBy</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l52"><code>lib&#x2F;component.jsx:52</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>Array with the keys that can press the left button when focussed.
+Default: [13, 32]</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_activatedBy" class="property item">
+    <h3 class="name"><code>activatedBy</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l149"><code>lib&#x2F;component.jsx:149</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>Array with the keys that can press the right button when focussed.
+Default: [13, 32]</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_aria-label" class="property item">
+    <h3 class="name"><code>aria-label</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l62"><code>lib&#x2F;component.jsx:62</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The aria-label for the left button. When not set, it will equal the buttonText</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_aria-label" class="property item">
+    <h3 class="name"><code>aria-label</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l159"><code>lib&#x2F;component.jsx:159</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The aria-label for the right button. When not set, it will equal the buttonText</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_buttonClass" class="property item">
+    <h3 class="name"><code>buttonClass</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l25"><code>lib&#x2F;component.jsx:25</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The class that should be set on the two button-elements</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_className" class="property item">
+    <h3 class="name"><code>className</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l34"><code>lib&#x2F;component.jsx:34</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The class that should be set on the element</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_disabled" class="property item">
+    <h3 class="name"><code>disabled</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l43"><code>lib&#x2F;component.jsx:43</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>Whether the button is disabled</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_leftButtonHTML" class="property item">
+    <h3 class="name"><code>leftButtonHTML</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l100"><code>lib&#x2F;component.jsx:100</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The Button-text for the left button, retaining html-code. If you don't need HTML, then <code>buttonText</code> is preferred.
+If you need different buttonText for the <code>pressed</code> and <code>release</code>-state, then use
+<code>buttonHTMLPressed</code> and <code>buttonHTMLReleased</code></p>
+
+    </div>
+
+
+
+</div>
+<div id="property_leftButtonHTMLPressed" class="property item">
+    <h3 class="name"><code>leftButtonHTMLPressed</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l111"><code>lib&#x2F;component.jsx:111</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The Button-text for the left button, retaining html-code. If you don't need HTML,
+then <code>buttonText</code> is preferred.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_leftButtonHTMLReleased" class="property item">
+    <h3 class="name"><code>leftButtonHTMLReleased</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l121"><code>lib&#x2F;component.jsx:121</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The Button-text for the left button, retaining html-code. If you don't need HTML,
+then <code>buttonText</code> is preferred.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_leftButtonText" class="property item">
+    <h3 class="name"><code>leftButtonText</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l71"><code>lib&#x2F;component.jsx:71</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The Button-text for the left button. Will be escaped. If you need HTML, then use <code>buttonHTML</code> instead.
+If you need different buttonText for the <code>pressed</code> and <code>release</code>-state, then use
+<code>buttonTextPressed</code> and <code>buttonTextReleased</code></p>
+
+    </div>
+
+
+
+</div>
+<div id="property_leftButtonTextPressed" class="property item">
+    <h3 class="name"><code>leftButtonTextPressed</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l82"><code>lib&#x2F;component.jsx:82</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The Button-text for the left button when pressed. Will be escaped. If you need HTML, then use <code>buttonHTML</code> instead.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_leftButtonTextReleased" class="property item">
+    <h3 class="name"><code>leftButtonTextReleased</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l91"><code>lib&#x2F;component.jsx:91</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The Button-text for the left button. Will be escaped. If you need HTML, then use <code>buttonHTML</code> instead.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_name" class="property item">
+    <h3 class="name"><code>name</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l131"><code>lib&#x2F;component.jsx:131</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The name-attribute of the button</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_object" class="property item">
+    <h3 class="name"><code>object</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l253"><code>lib&#x2F;component.jsx:253</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>Inline style</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_onClick" class="property item">
+    <h3 class="name"><code>onClick</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l140"><code>lib&#x2F;component.jsx:140</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>Callback wheneveer the button gets clicked.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_rightButtonHTML" class="property item">
+    <h3 class="name"><code>rightButtonHTML</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l197"><code>lib&#x2F;component.jsx:197</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The Button-text for the right button, retaining html-code. If you don't need HTML, then <code>buttonText</code> is preferred.
+If you need different buttonText for the <code>pressed</code> and <code>release</code>-state, then use
+<code>buttonHTMLPressed</code> and <code>buttonHTMLReleased</code></p>
+
+    </div>
+
+
+
+</div>
+<div id="property_rightButtonHTMLPressed" class="property item">
+    <h3 class="name"><code>rightButtonHTMLPressed</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l208"><code>lib&#x2F;component.jsx:208</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The Button-text for the right button, retaining html-code. If you don't need HTML,
+then <code>buttonText</code> is preferred.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_rightButtonHTMLReleased" class="property item">
+    <h3 class="name"><code>rightButtonHTMLReleased</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l218"><code>lib&#x2F;component.jsx:218</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The Button-text for the right button, retaining html-code. If you don't need HTML,
+then <code>buttonText</code> is preferred.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_rightButtonText" class="property item">
+    <h3 class="name"><code>rightButtonText</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l168"><code>lib&#x2F;component.jsx:168</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The Button-text for the right button. Will be escaped. If you need HTML, then use <code>buttonHTML</code> instead.
+If you need different buttonText for the <code>pressed</code> and <code>release</code>-state, then use
+<code>buttonTextPressed</code> and <code>buttonTextReleased</code></p>
+
+    </div>
+
+
+
+</div>
+<div id="property_rightButtonTextPressed" class="property item">
+    <h3 class="name"><code>rightButtonTextPressed</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l179"><code>lib&#x2F;component.jsx:179</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The Button-text for the right button when pressed. Will be escaped. If you need HTML, then use <code>buttonHTML</code> instead.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_rightButtonTextReleased" class="property item">
+    <h3 class="name"><code>rightButtonTextReleased</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l188"><code>lib&#x2F;component.jsx:188</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The Button-text for the right button. Will be escaped. If you need HTML, then use <code>buttonHTML</code> instead.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_state" class="property item">
+    <h3 class="name"><code>state</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l228"><code>lib&#x2F;component.jsx:228</code></a>
+        </p>
+
+
+            <p>Available since 2.0.0</p>
+    </div>
+
+    <div class="description">
+        <p>Which button is pressed:</p>
+<p>0 --&gt; none
+1 --&gt; left button
+2 --&gt; right button</p>
+
+    </div>
+
+        <p><strong>Default:</strong> 0</p>
+
+
+</div>
+<div id="property_stateUndefinable" class="property item">
+    <h3 class="name"><code>stateUndefinable</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l242"><code>lib&#x2F;component.jsx:242</code></a>
+        </p>
+
+
+            <p>Available since 2.0.0</p>
+    </div>
+
+    <div class="description">
+        <p>If the state can be reset tu <code>undefined</code> in case an active button is clicked.
+Defaults to <code>false</code> which means that it it trully toggleable.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> false</p>
+
+
+</div>
+<div id="property_tabIndex" class="property item">
+    <h3 class="name"><code>tabIndex</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/lib_component.jsx.html#l262"><code>lib&#x2F;component.jsx:262</code></a>
+        </p>
+
+
+            <p>Available since 0.0.1</p>
+    </div>
+
+    <div class="description">
+        <p>The tabIndex</p>
+
+    </div>
+
+
+
+</div>
+            </div>
+
+
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

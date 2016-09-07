@@ -1,0 +1,385 @@
+{
+    "project": {
+        "name": "itsa-react-doubletogglebutton",
+        "description": "React-Component: xxxxx",
+        "logo": "https://avatars0.githubusercontent.com/u/8314644?v=3&s=84",
+        "version": "0.0.1"
+    },
+    "files": {
+        "lib/component.jsx": {
+            "name": "lib/component.jsx",
+            "modules": {
+                "component.jsx": 1
+            },
+            "classes": {
+                "Component": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "component.jsx": {
+            "name": "component.jsx",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "Component": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "lib/component.jsx",
+            "line": 3,
+            "description": "Description here\n\n\n\n<i>Copyright (c) 2016 ItsAsbreuk - http://itsasbreuk.nl</i><br>\nNew BSD License - http://choosealicense.com/licenses/bsd-3-clause/",
+            "since": "15.0.0"
+        }
+    },
+    "classes": {
+        "Component": {
+            "name": "Component",
+            "shortname": "Component",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "component.jsx",
+            "namespace": "",
+            "file": "lib/component.jsx",
+            "line": 3,
+            "description": "Description here\n\n\n\n<i>Copyright (c) 2016 ItsAsbreuk - http://itsasbreuk.nl</i><br>\nNew BSD License - http://choosealicense.com/licenses/bsd-3-clause/"
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "lib/component.jsx",
+            "line": 25,
+            "description": "The class that should be set on the two button-elements",
+            "itemtype": "property",
+            "name": "buttonClass",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 34,
+            "description": "The class that should be set on the element",
+            "itemtype": "property",
+            "name": "className",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 43,
+            "description": "Whether the button is disabled",
+            "itemtype": "property",
+            "name": "disabled",
+            "type": "Boolean",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 52,
+            "description": "Array with the keys that can press the left button when focussed.\nDefault: [13, 32]",
+            "itemtype": "property",
+            "name": "activatedBy",
+            "type": "Array",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 62,
+            "description": "The aria-label for the left button. When not set, it will equal the buttonText",
+            "itemtype": "property",
+            "name": "aria-label",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 71,
+            "description": "The Button-text for the left button. Will be escaped. If you need HTML, then use `buttonHTML` instead.\nIf you need different buttonText for the `pressed` and `release`-state, then use\n`buttonTextPressed` and `buttonTextReleased`",
+            "itemtype": "property",
+            "name": "leftButtonText",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 82,
+            "description": "The Button-text for the left button when pressed. Will be escaped. If you need HTML, then use `buttonHTML` instead.",
+            "itemtype": "property",
+            "name": "leftButtonTextPressed",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 91,
+            "description": "The Button-text for the left button. Will be escaped. If you need HTML, then use `buttonHTML` instead.",
+            "itemtype": "property",
+            "name": "leftButtonTextReleased",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 100,
+            "description": "The Button-text for the left button, retaining html-code. If you don't need HTML, then `buttonText` is preferred.\nIf you need different buttonText for the `pressed` and `release`-state, then use\n`buttonHTMLPressed` and `buttonHTMLReleased`",
+            "itemtype": "property",
+            "name": "leftButtonHTML",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 111,
+            "description": "The Button-text for the left button, retaining html-code. If you don't need HTML,\nthen `buttonText` is preferred.",
+            "itemtype": "property",
+            "name": "leftButtonHTMLPressed",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 121,
+            "description": "The Button-text for the left button, retaining html-code. If you don't need HTML,\nthen `buttonText` is preferred.",
+            "itemtype": "property",
+            "name": "leftButtonHTMLReleased",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 131,
+            "description": "The name-attribute of the button",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 140,
+            "description": "Callback wheneveer the button gets clicked.",
+            "itemtype": "property",
+            "name": "onClick",
+            "type": "Function",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 149,
+            "description": "Array with the keys that can press the right button when focussed.\nDefault: [13, 32]",
+            "itemtype": "property",
+            "name": "activatedBy",
+            "type": "Array",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 159,
+            "description": "The aria-label for the right button. When not set, it will equal the buttonText",
+            "itemtype": "property",
+            "name": "aria-label",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 168,
+            "description": "The Button-text for the right button. Will be escaped. If you need HTML, then use `buttonHTML` instead.\nIf you need different buttonText for the `pressed` and `release`-state, then use\n`buttonTextPressed` and `buttonTextReleased`",
+            "itemtype": "property",
+            "name": "rightButtonText",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 179,
+            "description": "The Button-text for the right button when pressed. Will be escaped. If you need HTML, then use `buttonHTML` instead.",
+            "itemtype": "property",
+            "name": "rightButtonTextPressed",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 188,
+            "description": "The Button-text for the right button. Will be escaped. If you need HTML, then use `buttonHTML` instead.",
+            "itemtype": "property",
+            "name": "rightButtonTextReleased",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 197,
+            "description": "The Button-text for the right button, retaining html-code. If you don't need HTML, then `buttonText` is preferred.\nIf you need different buttonText for the `pressed` and `release`-state, then use\n`buttonHTMLPressed` and `buttonHTMLReleased`",
+            "itemtype": "property",
+            "name": "rightButtonHTML",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 208,
+            "description": "The Button-text for the right button, retaining html-code. If you don't need HTML,\nthen `buttonText` is preferred.",
+            "itemtype": "property",
+            "name": "rightButtonHTMLPressed",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 218,
+            "description": "The Button-text for the right button, retaining html-code. If you don't need HTML,\nthen `buttonText` is preferred.",
+            "itemtype": "property",
+            "name": "rightButtonHTMLReleased",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 228,
+            "description": "Which button is pressed:\n\n0 --> none\n1 --> left button\n2 --> right button",
+            "itemtype": "property",
+            "name": "state",
+            "type": "Object",
+            "default": "0",
+            "since": "2.0.0",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 242,
+            "description": "If the state can be reset tu `undefined` in case an active button is clicked.\nDefaults to `false` which means that it it trully toggleable.",
+            "itemtype": "property",
+            "name": "stateUndefinable",
+            "type": "Boolean",
+            "default": "false",
+            "since": "2.0.0",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 253,
+            "description": "Inline style",
+            "itemtype": "property",
+            "name": "object",
+            "type": "String",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 262,
+            "description": "The tabIndex",
+            "itemtype": "property",
+            "name": "tabIndex",
+            "type": "Number",
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 272,
+            "description": "Blurs the Component.",
+            "itemtype": "method",
+            "name": "blur",
+            "chainable": 1,
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 286,
+            "description": "Sets the focus on the Component's unchecked button. (unless specified to set at the checked)",
+            "itemtype": "method",
+            "name": "focus",
+            "params": [
+                {
+                    "name": "focusChecked",
+                    "description": "to focus the checked button",
+                    "type": "Boolean",
+                    "optional": true,
+                    "optdefault": "false"
+                },
+                {
+                    "name": "transitionTime",
+                    "description": "transition-time to focus the element into the view",
+                    "type": "Number",
+                    "optional": true
+                }
+            ],
+            "chainable": 1,
+            "since": "0.0.1",
+            "class": "Component",
+            "module": "component.jsx"
+        },
+        {
+            "file": "lib/component.jsx",
+            "line": 326,
+            "description": "React render-method --> renderes the Component.",
+            "itemtype": "method",
+            "name": "render",
+            "return": {
+                "description": "ReactComponent"
+            },
+            "since": "15.0.0",
+            "class": "Component",
+            "module": "component.jsx"
+        }
+    ],
+    "warnings": []
+}
