@@ -21474,6 +21474,9 @@
 	            mouseDown: false
 	        };
 	    },
+	    handleBlur: function handleBlur() {
+	        this._keyDown = false;
+	    },
 
 
 	    /**
@@ -21730,6 +21733,7 @@
 	                dangerouslySetInnerHTML: dangerouslySetInnerHTML,
 	                disabled: disabled,
 	                name: props.name,
+	                onBlur: instance.handleBlur,
 	                onClick: handleClick,
 	                onKeyDown: handleKeyDown,
 	                onKeyUp: handleKeyUp,

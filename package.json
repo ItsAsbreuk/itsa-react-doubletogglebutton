@@ -1,6 +1,6 @@
 {
   "name": "itsa-react-doubletogglebutton",
-  "version": "15.0.0",
+  "version": "15.0.2",
   "description": "itsa-react-doubletogglebutton",
   "author": [
     {
@@ -35,6 +35,10 @@
   "peerDependencies": {
     "react": "^15.0.1",
     "react-dom": "^15.0.1"
+  },
+  "dependencies": {
+    "itsa-react-button": "^15.2.35",
+    "itsa-react-togglebutton": "^15.1.30"
   },
   "devDependencies": {
     "babel-core": "^6.7.6",
@@ -85,9 +89,5 @@
       "android-browser/latest"
     ]
   },
-  "license": "BSD-3-Clause",
-  "dependencies": {
-    "itsa-react-button": "^15.2.34",
-    "itsa-react-togglebutton": "^15.1.29"
-  }
+  "license": "BSD-3-Clause"
 }

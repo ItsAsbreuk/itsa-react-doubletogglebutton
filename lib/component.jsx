@@ -129,13 +129,13 @@ const Component = React.createClass({
         leftButtonHTMLReleased: PropTypes.string,
 
         /**
-         * The name-attribute of the button
+         * The name-attribute of the left button
          *
          * @property name
          * @type String
          * @since 0.0.1
         */
-        name: PropTypes.string,
+        leftName: PropTypes.string,
 
         /**
          * Callback wheneveer the button gets clicked.
@@ -224,6 +224,15 @@ const Component = React.createClass({
          * @since 0.0.1
         */
         rightButtonHTMLReleased: PropTypes.string,
+
+        /**
+         * The name-attribute of the right button
+         *
+         * @property name
+         * @type String
+         * @since 0.0.1
+        */
+        rightName: PropTypes.string,
 
         /**
          * Which button is pressed:
@@ -342,7 +351,6 @@ const Component = React.createClass({
         return (
             <div
                 className={classname}
-                name={name}
                 style={props.style}>
                 <ToggleButton
                     activatedBy={props.leftActivatedBy}
@@ -355,6 +363,7 @@ const Component = React.createClass({
                     buttonHTMLReleased={props.leftButtonHTMLReleased}
                     className={props.buttonClass}
                     disabled={props.disabled}
+                    name={props.leftName}
                     onChange={instance.handleChange.bind(instance, (stateUndefinable && (state===1)) ? 0 : 1)}
                     pressed={state===1}
                     ref="left-button"
@@ -370,6 +379,7 @@ const Component = React.createClass({
                     buttonHTMLReleased={props.rightButtonHTMLReleased}
                     className={props.buttonClass}
                     disabled={props.disabled}
+                    name={props.rightName}
                     onChange={instance.handleChange.bind(null, (stateUndefinable && (state>1)) ? 0 : 2)}
                     pressed={state>1}
                     ref="right-button"
