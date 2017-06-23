@@ -15,268 +15,18 @@
 */
 
 const React = require("react"),
-    PropTypes = React.PropTypes,
+    PropTypes = require("prop-types"),
     ToggleButton = require("itsa-react-togglebutton"),
     MAIN_CLASS = "itsa-doubletogglebutton";
 
-const Component = React.createClass({
-
-    propTypes: {
-        /**
-         * The class that should be set on the two button-elements
-         *
-         * @property buttonClass
-         * @type String
-         * @since 0.0.1
-        */
-        buttonClass: PropTypes.string,
-
-        /**
-         * The class that should be set on the element
-         *
-         * @property className
-         * @type String
-         * @since 0.0.1
-        */
-        className: PropTypes.string,
-
-        /**
-         * Whether the button is disabled
-         *
-         * @property disabled
-         * @type Boolean
-         * @since 0.0.1
-        */
-        disabled: PropTypes.bool,
-
-        /**
-         * Array with the keys that can press the left button when focussed.
-         * Default: [13, 32]
-         *
-         * @property activatedBy
-         * @type Array
-         * @since 0.0.1
-        */
-        leftActivatedBy: PropTypes.array,
-
-        /**
-         * The aria-label for the left button. When not set, it will equal the buttonText
-         *
-         * @property aria-label
-         * @type String
-         * @since 0.0.1
-        */
-        "left-aria-label": PropTypes.string,
-
-        /**
-         * The Button-text for the left button. Will be escaped. If you need HTML, then use `buttonHTML` instead.
-         * If you need different buttonText for the `pressed` and `release`-state, then use
-         * `buttonTextPressed` and `buttonTextReleased`
-         *
-         * @property leftButtonText
-         * @type String
-         * @since 0.0.1
-        */
-        leftButtonText: PropTypes.string,
-
-        /**
-         * The Button-text for the left button when pressed. Will be escaped. If you need HTML, then use `buttonHTML` instead.
-         *
-         * @property leftButtonTextPressed
-         * @type String
-         * @since 0.0.1
-        */
-        leftButtonTextPressed: PropTypes.string,
-
-        /**
-         * The Button-text for the left button. Will be escaped. If you need HTML, then use `buttonHTML` instead.
-         *
-         * @property leftButtonTextReleased
-         * @type String
-         * @since 0.0.1
-        */
-        leftButtonTextReleased: PropTypes.string,
-
-        /**
-         * The Button-text for the left button, retaining html-code. If you don't need HTML, then `buttonText` is preferred.
-         * If you need different buttonText for the `pressed` and `release`-state, then use
-         * `buttonHTMLPressed` and `buttonHTMLReleased`
-         *
-         * @property leftButtonHTML
-         * @type String
-         * @since 0.0.1
-        */
-        leftButtonHTML: PropTypes.string,
-
-        /**
-         * The Button-text for the left button, retaining html-code. If you don't need HTML,
-         * then `buttonText` is preferred.
-         *
-         * @property leftButtonHTMLPressed
-         * @type String
-         * @since 0.0.1
-        */
-        leftButtonHTMLPressed: PropTypes.string,
-
-        /**
-         * The Button-text for the left button, retaining html-code. If you don't need HTML,
-         * then `buttonText` is preferred.
-         *
-         * @property leftButtonHTMLReleased
-         * @type String
-         * @since 0.0.1
-        */
-        leftButtonHTMLReleased: PropTypes.string,
-
-        /**
-         * The name-attribute of the left button
-         *
-         * @property name
-         * @type String
-         * @since 0.0.1
-        */
-        leftName: PropTypes.string,
-
-        /**
-         * Callback wheneveer the button gets clicked.
-         *
-         * @property onClick
-         * @type Function
-         * @since 0.0.1
-        */
-        onChange: PropTypes.func.isRequired,
-
-        /**
-         * Array with the keys that can press the right button when focussed.
-         * Default: [13, 32]
-         *
-         * @property activatedBy
-         * @type Array
-         * @since 0.0.1
-        */
-        rightActivatedBy: PropTypes.array,
-
-        /**
-         * The aria-label for the right button. When not set, it will equal the buttonText
-         *
-         * @property aria-label
-         * @type String
-         * @since 0.0.1
-        */
-        "right-aria-label": PropTypes.string,
-
-        /**
-         * The Button-text for the right button. Will be escaped. If you need HTML, then use `buttonHTML` instead.
-         * If you need different buttonText for the `pressed` and `release`-state, then use
-         * `buttonTextPressed` and `buttonTextReleased`
-         *
-         * @property rightButtonText
-         * @type String
-         * @since 0.0.1
-        */
-        rightButtonText: PropTypes.string,
-
-        /**
-         * The Button-text for the right button when pressed. Will be escaped. If you need HTML, then use `buttonHTML` instead.
-         *
-         * @property rightButtonTextPressed
-         * @type String
-         * @since 0.0.1
-        */
-        rightButtonTextPressed: PropTypes.string,
-
-        /**
-         * The Button-text for the right button. Will be escaped. If you need HTML, then use `buttonHTML` instead.
-         *
-         * @property rightButtonTextReleased
-         * @type String
-         * @since 0.0.1
-        */
-        rightButtonTextReleased: PropTypes.string,
-
-        /**
-         * The Button-text for the right button, retaining html-code. If you don't need HTML, then `buttonText` is preferred.
-         * If you need different buttonText for the `pressed` and `release`-state, then use
-         * `buttonHTMLPressed` and `buttonHTMLReleased`
-         *
-         * @property rightButtonHTML
-         * @type String
-         * @since 0.0.1
-        */
-        rightButtonHTML: PropTypes.string,
-
-        /**
-         * The Button-text for the right button, retaining html-code. If you don't need HTML,
-         * then `buttonText` is preferred.
-         *
-         * @property rightButtonHTMLPressed
-         * @type String
-         * @since 0.0.1
-        */
-        rightButtonHTMLPressed: PropTypes.string,
-
-        /**
-         * The Button-text for the right button, retaining html-code. If you don't need HTML,
-         * then `buttonText` is preferred.
-         *
-         * @property rightButtonHTMLReleased
-         * @type String
-         * @since 0.0.1
-        */
-        rightButtonHTMLReleased: PropTypes.string,
-
-        /**
-         * The name-attribute of the right button
-         *
-         * @property name
-         * @type String
-         * @since 0.0.1
-        */
-        rightName: PropTypes.string,
-
-        /**
-         * Which button is pressed:
-         *
-         * 0 --> none
-         * 1 --> left button
-         * 2 --> right button
-         *
-         * @property state
-         * @type Object
-         * @default 0
-         * @since 2.0.0
-        */
-        state: PropTypes.number,
-
-        /**
-         * If the state can be reset tu `undefined` in case an active button is clicked.
-         * Defaults to `false` which means that it it trully toggleable.
-         *
-         * @property stateUndefinable
-         * @type Boolean
-         * @default false
-         * @since 2.0.0
-        */
-        stateUndefinable: PropTypes.bool,
-
-        /**
-         * Inline style
-         *
-         * @property object
-         * @type String
-         * @since 0.0.1
-        */
-        style: PropTypes.object,
-
-        /**
-         * The tabIndex
-         *
-         * @property tabIndex
-         * @type Number
-         * @since 0.0.1
-        */
-        tabIndex: PropTypes.number
-    },
+class Component extends React.Component {
+    constructor(props) {
+        super(props);
+        const instance = this;
+        instance.blur = instance.blur.bind(instance);
+        instance.focus = instance.focus.bind(instance);
+        instance.handleChange = instance.handleChange.bind(instance);
+    }
 
     /**
      * Blurs the Component.
@@ -290,7 +40,7 @@ const Component = React.createClass({
         instance.refs["left-button"].blur();
         instance.refs["right-button"].blur();
         return instance;
-    },
+    }
 
     /**
      * Sets the focus on the Component's unchecked button. (unless specified to set at the checked)
@@ -312,15 +62,7 @@ const Component = React.createClass({
         }
         refName += "-button";
         instance.refs[refName].focus(transitionTime);
-    },
-
-    getDefaultProps() {
-        return {
-            state: 0,
-            stateUndefinable: false
-
-        };
-    },
+    }
 
     handleChange(newState) {
         let refName;
@@ -330,7 +72,7 @@ const Component = React.createClass({
             instance.refs[refName].focus();
         }
         instance.props.onChange(newState);
-    },
+    }
 
     /**
      * React render-method --> renderes the Component.
@@ -388,6 +130,268 @@ const Component = React.createClass({
         );
     }
 
-});
+}
+
+Component.propTypes = {
+    /**
+     * The class that should be set on the two button-elements
+     *
+     * @property buttonClass
+     * @type String
+     * @since 0.0.1
+    */
+    buttonClass: PropTypes.string,
+
+    /**
+     * The class that should be set on the element
+     *
+     * @property className
+     * @type String
+     * @since 0.0.1
+    */
+    className: PropTypes.string,
+
+    /**
+     * Whether the button is disabled
+     *
+     * @property disabled
+     * @type Boolean
+     * @since 0.0.1
+    */
+    disabled: PropTypes.bool,
+
+    /**
+     * Array with the keys that can press the left button when focussed.
+     * Default: [13, 32]
+     *
+     * @property activatedBy
+     * @type Array
+     * @since 0.0.1
+    */
+    leftActivatedBy: PropTypes.array,
+
+    /**
+     * The aria-label for the left button. When not set, it will equal the buttonText
+     *
+     * @property aria-label
+     * @type String
+     * @since 0.0.1
+    */
+    "left-aria-label": PropTypes.string,
+
+    /**
+     * The Button-text for the left button. Will be escaped. If you need HTML, then use `buttonHTML` instead.
+     * If you need different buttonText for the `pressed` and `release`-state, then use
+     * `buttonTextPressed` and `buttonTextReleased`
+     *
+     * @property leftButtonText
+     * @type String
+     * @since 0.0.1
+    */
+    leftButtonText: PropTypes.string,
+
+    /**
+     * The Button-text for the left button when pressed. Will be escaped. If you need HTML, then use `buttonHTML` instead.
+     *
+     * @property leftButtonTextPressed
+     * @type String
+     * @since 0.0.1
+    */
+    leftButtonTextPressed: PropTypes.string,
+
+    /**
+     * The Button-text for the left button. Will be escaped. If you need HTML, then use `buttonHTML` instead.
+     *
+     * @property leftButtonTextReleased
+     * @type String
+     * @since 0.0.1
+    */
+    leftButtonTextReleased: PropTypes.string,
+
+    /**
+     * The Button-text for the left button, retaining html-code. If you don't need HTML, then `buttonText` is preferred.
+     * If you need different buttonText for the `pressed` and `release`-state, then use
+     * `buttonHTMLPressed` and `buttonHTMLReleased`
+     *
+     * @property leftButtonHTML
+     * @type String
+     * @since 0.0.1
+    */
+    leftButtonHTML: PropTypes.string,
+
+    /**
+     * The Button-text for the left button, retaining html-code. If you don't need HTML,
+     * then `buttonText` is preferred.
+     *
+     * @property leftButtonHTMLPressed
+     * @type String
+     * @since 0.0.1
+    */
+    leftButtonHTMLPressed: PropTypes.string,
+
+    /**
+     * The Button-text for the left button, retaining html-code. If you don't need HTML,
+     * then `buttonText` is preferred.
+     *
+     * @property leftButtonHTMLReleased
+     * @type String
+     * @since 0.0.1
+    */
+    leftButtonHTMLReleased: PropTypes.string,
+
+    /**
+     * The name-attribute of the left button
+     *
+     * @property name
+     * @type String
+     * @since 0.0.1
+    */
+    leftName: PropTypes.string,
+
+    /**
+     * Callback wheneveer the button gets clicked.
+     *
+     * @property onClick
+     * @type Function
+     * @since 0.0.1
+    */
+    onChange: PropTypes.func.isRequired,
+
+    /**
+     * Array with the keys that can press the right button when focussed.
+     * Default: [13, 32]
+     *
+     * @property activatedBy
+     * @type Array
+     * @since 0.0.1
+    */
+    rightActivatedBy: PropTypes.array,
+
+    /**
+     * The aria-label for the right button. When not set, it will equal the buttonText
+     *
+     * @property aria-label
+     * @type String
+     * @since 0.0.1
+    */
+    "right-aria-label": PropTypes.string,
+
+    /**
+     * The Button-text for the right button. Will be escaped. If you need HTML, then use `buttonHTML` instead.
+     * If you need different buttonText for the `pressed` and `release`-state, then use
+     * `buttonTextPressed` and `buttonTextReleased`
+     *
+     * @property rightButtonText
+     * @type String
+     * @since 0.0.1
+    */
+    rightButtonText: PropTypes.string,
+
+    /**
+     * The Button-text for the right button when pressed. Will be escaped. If you need HTML, then use `buttonHTML` instead.
+     *
+     * @property rightButtonTextPressed
+     * @type String
+     * @since 0.0.1
+    */
+    rightButtonTextPressed: PropTypes.string,
+
+    /**
+     * The Button-text for the right button. Will be escaped. If you need HTML, then use `buttonHTML` instead.
+     *
+     * @property rightButtonTextReleased
+     * @type String
+     * @since 0.0.1
+    */
+    rightButtonTextReleased: PropTypes.string,
+
+    /**
+     * The Button-text for the right button, retaining html-code. If you don't need HTML, then `buttonText` is preferred.
+     * If you need different buttonText for the `pressed` and `release`-state, then use
+     * `buttonHTMLPressed` and `buttonHTMLReleased`
+     *
+     * @property rightButtonHTML
+     * @type String
+     * @since 0.0.1
+    */
+    rightButtonHTML: PropTypes.string,
+
+    /**
+     * The Button-text for the right button, retaining html-code. If you don't need HTML,
+     * then `buttonText` is preferred.
+     *
+     * @property rightButtonHTMLPressed
+     * @type String
+     * @since 0.0.1
+    */
+    rightButtonHTMLPressed: PropTypes.string,
+
+    /**
+     * The Button-text for the right button, retaining html-code. If you don't need HTML,
+     * then `buttonText` is preferred.
+     *
+     * @property rightButtonHTMLReleased
+     * @type String
+     * @since 0.0.1
+    */
+    rightButtonHTMLReleased: PropTypes.string,
+
+    /**
+     * The name-attribute of the right button
+     *
+     * @property name
+     * @type String
+     * @since 0.0.1
+    */
+    rightName: PropTypes.string,
+
+    /**
+     * Which button is pressed:
+     *
+     * 0 --> none
+     * 1 --> left button
+     * 2 --> right button
+     *
+     * @property state
+     * @type Object
+     * @default 0
+     * @since 2.0.0
+    */
+    state: PropTypes.number,
+
+    /**
+     * If the state can be reset tu `undefined` in case an active button is clicked.
+     * Defaults to `false` which means that it it trully toggleable.
+     *
+     * @property stateUndefinable
+     * @type Boolean
+     * @default false
+     * @since 2.0.0
+    */
+    stateUndefinable: PropTypes.bool,
+
+    /**
+     * Inline style
+     *
+     * @property object
+     * @type String
+     * @since 0.0.1
+    */
+    style: PropTypes.object,
+
+    /**
+     * The tabIndex
+     *
+     * @property tabIndex
+     * @type Number
+     * @since 0.0.1
+    */
+    tabIndex: PropTypes.number
+};
+
+Component.defaultProps = {
+    state: 0,
+    stateUndefinable: false
+};
 
 module.exports = Component;
