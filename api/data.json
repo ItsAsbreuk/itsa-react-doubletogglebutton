@@ -92,7 +92,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 77,
+            "line": 76,
             "description": "React render-method --> renderes the Component.",
             "itemtype": "method",
             "name": "render",
@@ -105,7 +105,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 136,
+            "line": 135,
             "description": "The class that should be set on the two button-elements",
             "itemtype": "property",
             "name": "buttonClass",
@@ -116,7 +116,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 145,
+            "line": 144,
             "description": "The class that should be set on the element",
             "itemtype": "property",
             "name": "className",
@@ -127,7 +127,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 154,
+            "line": 153,
             "description": "Whether the button is disabled",
             "itemtype": "property",
             "name": "disabled",
@@ -138,7 +138,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 163,
+            "line": 162,
             "description": "Array with the keys that can press the left button when focussed.\nDefault: [13, 32]",
             "itemtype": "property",
             "name": "activatedBy",
@@ -149,7 +149,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 173,
+            "line": 172,
             "description": "The aria-label for the left button. When not set, it will equal the buttonText",
             "itemtype": "property",
             "name": "aria-label",
@@ -160,7 +160,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 182,
+            "line": 181,
             "description": "The Button-text for the left button. Will be escaped. If you need HTML, then use `buttonHTML` instead.\nIf you need different buttonText for the `pressed` and `release`-state, then use\n`buttonTextPressed` and `buttonTextReleased`",
             "itemtype": "property",
             "name": "leftButtonText",
@@ -171,7 +171,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 193,
+            "line": 192,
             "description": "The Button-text for the left button when pressed. Will be escaped. If you need HTML, then use `buttonHTML` instead.",
             "itemtype": "property",
             "name": "leftButtonTextPressed",
@@ -182,7 +182,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 202,
+            "line": 201,
             "description": "The Button-text for the left button. Will be escaped. If you need HTML, then use `buttonHTML` instead.",
             "itemtype": "property",
             "name": "leftButtonTextReleased",
@@ -193,7 +193,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 211,
+            "line": 210,
             "description": "The Button-text for the left button, retaining html-code. If you don't need HTML, then `buttonText` is preferred.\nIf you need different buttonText for the `pressed` and `release`-state, then use\n`buttonHTMLPressed` and `buttonHTMLReleased`",
             "itemtype": "property",
             "name": "leftButtonHTML",
@@ -204,7 +204,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 222,
+            "line": 221,
             "description": "The Button-text for the left button, retaining html-code. If you don't need HTML,\nthen `buttonText` is preferred.",
             "itemtype": "property",
             "name": "leftButtonHTMLPressed",
@@ -215,7 +215,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 232,
+            "line": 231,
             "description": "The Button-text for the left button, retaining html-code. If you don't need HTML,\nthen `buttonText` is preferred.",
             "itemtype": "property",
             "name": "leftButtonHTMLReleased",
@@ -226,7 +226,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 242,
+            "line": 241,
             "description": "The name-attribute of the left button",
             "itemtype": "property",
             "name": "name",
@@ -237,7 +237,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 251,
+            "line": 250,
             "description": "Callback wheneveer the button gets clicked.",
             "itemtype": "property",
             "name": "onClick",
@@ -248,7 +248,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 260,
+            "line": 259,
             "description": "Array with the keys that can press the right button when focussed.\nDefault: [13, 32]",
             "itemtype": "property",
             "name": "activatedBy",
@@ -259,7 +259,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 270,
+            "line": 269,
             "description": "The aria-label for the right button. When not set, it will equal the buttonText",
             "itemtype": "property",
             "name": "aria-label",
@@ -270,7 +270,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 279,
+            "line": 278,
             "description": "The Button-text for the right button. Will be escaped. If you need HTML, then use `buttonHTML` instead.\nIf you need different buttonText for the `pressed` and `release`-state, then use\n`buttonTextPressed` and `buttonTextReleased`",
             "itemtype": "property",
             "name": "rightButtonText",
@@ -281,7 +281,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 290,
+            "line": 289,
             "description": "The Button-text for the right button when pressed. Will be escaped. If you need HTML, then use `buttonHTML` instead.",
             "itemtype": "property",
             "name": "rightButtonTextPressed",
@@ -292,7 +292,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 299,
+            "line": 298,
             "description": "The Button-text for the right button. Will be escaped. If you need HTML, then use `buttonHTML` instead.",
             "itemtype": "property",
             "name": "rightButtonTextReleased",
@@ -303,7 +303,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 308,
+            "line": 307,
             "description": "The Button-text for the right button, retaining html-code. If you don't need HTML, then `buttonText` is preferred.\nIf you need different buttonText for the `pressed` and `release`-state, then use\n`buttonHTMLPressed` and `buttonHTMLReleased`",
             "itemtype": "property",
             "name": "rightButtonHTML",
@@ -314,7 +314,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 319,
+            "line": 318,
             "description": "The Button-text for the right button, retaining html-code. If you don't need HTML,\nthen `buttonText` is preferred.",
             "itemtype": "property",
             "name": "rightButtonHTMLPressed",
@@ -325,7 +325,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 329,
+            "line": 328,
             "description": "The Button-text for the right button, retaining html-code. If you don't need HTML,\nthen `buttonText` is preferred.",
             "itemtype": "property",
             "name": "rightButtonHTMLReleased",
@@ -336,7 +336,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 339,
+            "line": 338,
             "description": "The name-attribute of the right button",
             "itemtype": "property",
             "name": "name",
@@ -347,7 +347,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 348,
+            "line": 347,
             "description": "Which button is pressed:\n\n0 --> none\n1 --> left button\n2 --> right button",
             "itemtype": "property",
             "name": "state",
@@ -359,7 +359,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 362,
+            "line": 361,
             "description": "If the state can be reset tu `undefined` in case an active button is clicked.\nDefaults to `false` which means that it it trully toggleable.",
             "itemtype": "property",
             "name": "stateUndefinable",
@@ -371,7 +371,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 373,
+            "line": 372,
             "description": "Inline style",
             "itemtype": "property",
             "name": "object",
@@ -382,7 +382,7 @@
         },
         {
             "file": "lib/component.jsx",
-            "line": 382,
+            "line": 381,
             "description": "The tabIndex",
             "itemtype": "property",
             "name": "tabIndex",

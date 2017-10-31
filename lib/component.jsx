@@ -37,8 +37,8 @@ class Component extends React.Component {
      */
     blur() {
         var instance = this;
-        instance.refs["left-button"].blur();
-        instance.refs["right-button"].blur();
+        instance._leftButton.blur();
+        instance._rightButton.blur();
         return instance;
     }
 
@@ -60,16 +60,15 @@ class Component extends React.Component {
         else {
             refName = ((instance.props.state===1) ? "right" : "left");
         }
-        refName += "-button";
-        instance.refs[refName].focus(transitionTime);
+        instance['_'+refName+'Button'].focus(transitionTime);
     }
 
     handleChange(newState) {
         let refName;
         const instance = this;
         if (newState!==0) {
-            refName = ((newState===1) ? "right" : "left") + "-button";
-            instance.refs[refName].focus();
+            refName = ((newState===1) ? "right" : "left");
+            instance['_'+refName+'Button'].focus();
         }
         instance.props.onChange(newState);
     }
@@ -108,7 +107,7 @@ class Component extends React.Component {
                     name={props.leftName}
                     onChange={instance.handleChange.bind(instance, (stateUndefinable && (state===1)) ? 0 : 1)}
                     pressed={state===1}
-                    ref="left-button"
+                    ref={node => instance._leftButton = node}
                     tabIndex={props.tabIndex} />
                 <ToggleButton
                     activatedBy={props.rightActivatedBy}
@@ -124,7 +123,7 @@ class Component extends React.Component {
                     name={props.rightName}
                     onChange={instance.handleChange.bind(null, (stateUndefinable && (state>1)) ? 0 : 2)}
                     pressed={state>1}
-                    ref="right-button"
+                    ref={node => instance._rightButton = node}
                     tabIndex={props.tabIndex} />
             </div>
         );

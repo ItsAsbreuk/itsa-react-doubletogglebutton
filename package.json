@@ -1,6 +1,6 @@
 {
   "name": "itsa-react-doubletogglebutton",
-  "version": "16.0.0",
+  "version": "16.0.4",
   "description": "itsa-react-doubletogglebutton",
   "author": [
     {
@@ -33,12 +33,11 @@
     "lib": "./lib"
   },
   "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15"
+    "react": ">=15"
   },
   "dependencies": {
-    "itsa-react-button": "^16.0.0",
-    "itsa-react-togglebutton": "^16.0.0",
+    "itsa-react-button": "^16.0.4",
+    "itsa-react-togglebutton": "^16.0.4",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
